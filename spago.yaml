@@ -4,10 +4,16 @@ package:
     - console
     - effect
     - prelude
+    - child
   test:
     main: Test.Main
-    dependencies: []
+    dependencies:
+      - quickcheck
+      - spec
+      - spec-node
 workspace:
   packageSet:
     registry: 64.1.1
-  extraPackages: {}
+  extraPackages:
+    child:
+      path: ./child-test
