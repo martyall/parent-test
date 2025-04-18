@@ -18,7 +18,7 @@ jobs:
         node-version: '18'
         
     - name: Install PureScript and Spago
-      run: npm install -g purescript spago
+      run: npm install -g purescript spago@next
         
     - name: Install project dependencies
       run: spago install
